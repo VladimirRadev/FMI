@@ -26,13 +26,13 @@ void runUnitTests()
         {9, 8, 3, 4, 2, 1, 6, 5},
         {5, 5, 0, 5, 5},
         {1, 2, 3, 6, 8, 7},
-        {-10, -3, 5, 10, 3},
+        {-10, -3, 5, 10, 3},   // mislq che na toq case shtom e necheten se gledda hem |-3-5| hem da e ravno na |10-5| toest tova dava false i ne e mirror (0 exp output)
         {10, 10, 20, 20, 30, 30, 40, 40, 50, 50, 60, 60},
         {1, -5, 4, 1, 2, 4, 10, 6},
     };
 
     // TODO: add the other expected outputs here
-    vector<int> expectedOutputs = {1, 1, 0, 1, 1, 0};
+    vector<int> expectedOutputs = {1, 1, 0, 0, 1, 0};
 
     for (int i = 0; i < inputs.size(); i++)
     {
